@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../imgs/Home.png');
+  background-position: fixed;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  color: black;
+  text-align: center;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 40px;
+  width: 160px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
+.menu a {
+  display: inline-block;
+  margin-right: 5px;
+  text-decoration: none;
+  color: transparent;
+  font-weight: bold;
+
+}
+
+.menu a[data-text="Just"]::before {
+  content:'Just';
+  margin-right: 5px;
+}
+.menu a:nth-child(3) {
+  margin-right: 5px;
+}
+
+.menu a:nth-child(4) {
+  margin-right: 3px;
+}
+
+.menu a:nth-child(5) {
+  margin-right: 5px;
+}
+
+.menu a:nth-child(6) {
+  margin-right:5px;
+}
+
+.menu a::before {
+  content: attr(data-text);
+  color: black;
+}
+
+.menu a:hover {
+  color: #E94F1E;
+  cursor: pointer;
+}
+
+.menu a.special-hover:hover {
+  color:black;
+}
+
+.icon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.icon img {
+  margin-right: 10px;
+}
+
+.icon img:hover {
+  filter: brightness(0.7);
+}
+
+.overlay {
+  position:absolute;
+  top: 60px;
+  left:0;
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(0,0,0,0.9);
+  color: white;
+  font: size 24px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: none;
+  z-index: 1;
+  font-family: 'Karla', sans-serif;
+  column-count: 2;
+  column-gap: 50px;
+  column-fill: auto;
+  column-width: 40px;
+  column-rule: #ccc;
+  line-height: 2;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  margin:0 auto;
+  transform: translate(-50%,-50%);
+  color: white;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  column-count: 2;
+  column-gap: 50px;
+  line-height: 2;
+}
+
+.overlay-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-left: 80px;
+  font-family: 'Karla', sans-serif;
+}
+
+.overlay-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+  line-height: 2;
+  font-family: 'Karla', sans-serif;
+  column-count: 2;
+  column-gap: 50px;
+  column-width: 40px;
+
+}
+
+.overlay.show {
+  display: block;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; 
+}
+
+.product {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start
+}
+
+.product h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-family: 'Karla', 'sans-serif';
+  color: #333;
+  align-self: flex-start;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product p {
+  font-size: 14px;
+  font-family: 'Karla', sans-serif;
+  color: #666;
+  align-self: flex-start;
+  margin: 0;
+  width: 100%;
+}
+
+.product button {
+  background-color: #E94F1E;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  align-self: flex-start;
+  margin: 0;
+  width: 100%;
+}
+
+.product button:hover {
+  background-color: #0056b3;
+}
+
+.product-details {
+  font-size: 14px;
+  color:#333;
+}
+
+.socialmedia-icons{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.socialmedia-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+.socialmedia-icons a:first-child{
+  margin-left: 0;
+}
+
+.socialmedia-icons a:last-child {
+  margin-right: 0;
+}
+
+.socialmedia-icons a:hover {
+  color: #E94F1E;
+  filter: brightness(0.7);
+}
