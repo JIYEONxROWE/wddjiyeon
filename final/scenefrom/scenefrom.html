@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene from J</title>
+    <link rel="stylesheet" href="Assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-icon" onclick="toggleMenu()"></div>
+    <div class="menu-background"></div>
+    <div class="menu">
+        <ul>
+            <li><a href="#" onclick="toggleTab('about')">about my eyes</a></li>
+            <li><a href="#" onclick="toggleTab('story')">story</a></li>
+            <li><a href="#" onclick="toggleTab('contact')">contact</a></li>
+        </ul>
+        <div id="about" class="tab-content">
+            <h2>About My Eyes</h2>
+            <p>My eyes are a total disaster where astigmatism, nearsightedness, and primacy coexist, but I can look at any object beautifully if I have glasses and a camera. My glasses were bought in Ginza, Tokyo, by Kaneko Megane. My camera was purchased at Mitsubishi Department Store in Osaka under the Nikon Coolpix.</p>
+        </div>
+        <div id="story" class="tab-content">
+            <h2>My Story</h2>
+            <p>Thank you for your efforts for this term.</p>
+        </div>
+        <div id="contact" class="tab-content">
+            <h2>Contact Me</h2>
+            <p>insta @genuine_xj</p>
+        </div>
+    </div>
+    <div class="gallery">
+    </div>
+
+    <div id="myModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <div class="filter-buttons">
+        <button onclick="filterImages('Florida')">Florida</button>
+        <button onclick="filterImages('Tahoe')">Tahoe</button>
+        <button onclick="filterImages('Vietnam')">Vietnam</button>
+    </div>
+
+    <script src="Assets/js/scripts.js"></script>
+</body>
+</html>
