@@ -1,0 +1,65 @@
+body {
+    font-family: Karla, sans-serif;
+    color: #484848;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+nav a,
+nav a:visitied {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 40px;
+    line-height: 80px;
+}
+
+header {
+    background-color: #FF5A5F;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    height: 88px;
+}
+
+.content {
+    width: 900px;
+    margin: auto;
+}
+
+section {
+    padding: 20px;
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+
+}
+
+h1 {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+section p {
+    font-size: 18px;
+}
