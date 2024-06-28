@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📸 from J</title>
+    <link rel="stylesheet" href="Assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-text">
+        <h1>J</h1>
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="Assets/imgs/lego.jpg" alt="레고">
+    </div>
+    <div class="menu-background">
+        <div class="scene">
+            <div class="cube">
+                <div class="cube__face cube__face--front">
+                    <p>Explore above!</p> 
+                </div>
+                <div class="cube__face cube__face--back"></div>
+                <div class="cube__face cube__face--right"></div>
+                <div class="cube__face cube__face--left"></div>
+                <div class="cube__face cube__face--top"></div>
+                <div class="cube__face cube__face--bottom"></div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#" onclick="toggleTab('about')">Camera</a>
+                <div id="about" class="nav-details tab-content">
+                    <h2>About my eyes</h2>
+                    <p>📷 Canon EOS M50</p>
+                    <p>📷 Panasonic Lumix GH5</p>
+                    <p>📷 Nikon Coolpix</p>
+                    <p>📷 Vivitar F536</p>
+                    <p>📷 Canon Autoboy3</p>
+                    <p>📷 Iphone 15</p>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="toggleTab('story')">Story</a>
+                <div id="story" class="nav-details tab-content">
+                    <h2>My Story</h2>
+                    <p>Hi, there! This is Jiyeon.</p>
+                    <p>The 'story' I am about to unfold spans from 2012 to the present.</p>
+                    <p>I'm showing you the places my footsteps have wandered and the scenes I captured through my eyes in there.</p>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="toggleTab('contact')">Contact</a>
+                <div id="contact" class="nav-details tab-content">
+                    <h2>Contact Me</h2>
+                    <p><strong>Email</strong></p>
+                        <a href="jxrowe@yonsei.ac.kr">jxrowe@yonsei.ac.kr</a>
+                    <p><strong>Instagram</strong></p>
+                        <a href="https://www.instagram.com/genuine_xj?igsh=MWk1ZnNpZjl4ZTE1eA==">@genuine_xj</a>
+                    <p><strong>linkedin</strong></p>
+                        <a href="https://www.linkedin.com/in/jiyeon-oh-aa25a328b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Jiyeon Oh_profile</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="gallery">
+        <!-- Gallery content here -->
+    </div>
+
+    <div class="modal_bg" style="display: none;"></div>
+    <div class="modal_wrap" style="display: none;">
+        <span class="modal_close">&times;</span>
+        <img src="" alt="Modal Image">
+    </div>
+
+    <div class="filter-buttons">
+        <button onclick="filterImages('All')">🌏</button>
+        <button onclick="filterImages('Berkeley')">Berkeley</button>
+        <button onclick="filterImages('San Francisco')">San Francisco</button>
+        <button onclick="filterImages('Florida')">Florida</button>
+        <button onclick="filterImages('Tahoe')">Tahoe</button>
+        <button onclick="filterImages('LA')">Los Angeles</button>
+        <button onclick="filterImages('San Diego')">San Diego</button>
+        <button onclick="filterImages('New York')">New York</button>
+        <button onclick="filterImages('H
