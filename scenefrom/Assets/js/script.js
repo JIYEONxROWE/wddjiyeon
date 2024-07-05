@@ -293,4 +293,7 @@ function filterImages(keyword) {
                 photo.style.display = 'none';
             }
         });
-    }, filteredPhotos.length * 50); // setTimeout 딜레이 값은 필요에 따라 조정 �
+    }, filteredPhotos.length * 50); // setTimeout 딜레이 값은 필요에 따라 조정 가능
+}
+
+
