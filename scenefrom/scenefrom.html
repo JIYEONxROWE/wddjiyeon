@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>📸 from J</title>
     <link rel="stylesheet" href="Assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
 </head>
+
 <body>
-    <div class="header-text">
-        <h1>J</h1>
+    <div class="container">
+        <div class="pre-loader">
+            <div class="loader"></div>
+            <div class="loader-bg"></div>
+        </div>
+        <div class="loader-content">
+            <div class="count"><p>0</p></div>
+            <div class="copy"><p class="ml16">Explore as much as you can.</p></div>
+        </div>
+        <div class="loader-2"></div>
     </div>
 
+    <div class="header-text">
+        <h1>JJJ</h1>
+    </div>
     <div class="menu-icon" onclick="toggleMenu()">
         <img src="Assets/imgs/lego.jpg" alt="레고">
     </div>
@@ -81,25 +98,10 @@
 
     <div class="filter-buttons">
         <button onclick="filterImages('All')">🌏</button>
-        <button onclick="filterImages('Berkeley')">Berkeley</button>
-        <button onclick="filterImages('San Francisco')">San Francisco</button>
-        <button onclick="filterImages('Florida')">Florida</button>
+        <button onclick="filterImages('Bay')">Bay Area</button>
         <button onclick="filterImages('Tahoe')">Tahoe</button>
+        <button onclick="filterImages('Florida')">Florida</button>
         <button onclick="filterImages('LA')">Los Angeles</button>
-        <button onclick="filterImages('San Diego')">San Diego</button>
         <button onclick="filterImages('New York')">New York</button>
-        <button onclick="filterImages('Hawaii')">Hawaii</button>
         <button onclick="filterImages('Vietnam')">Vietnam</button>
-        <button onclick="filterImages('Kyoto')">Kyoto</button>
-        <button onclick="filterImages('Osaka')">Osaka</button>
-        <button onclick="filterImages('Fukuoka')">Fukuoka</button>
-        <button onclick="filterImages('Paris')">Paris</button>
-    </div>
-
-    <footer class="footer">
-        <p>&copy; 2024 JiyeonOh. All rights reserved.</p>
-    </footer>
-
-    <script src="Assets/js/scripts.js"></script>
-</body>
-</html>
+        <
